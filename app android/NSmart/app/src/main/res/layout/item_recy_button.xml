@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/state_button"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:backgroundTint="@color/colorBlack"
+            app:cardCornerRadius="5dp"/>
+
+        <ImageView
+            android:id="@+id/icon_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/armchair"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/name_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name button"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
